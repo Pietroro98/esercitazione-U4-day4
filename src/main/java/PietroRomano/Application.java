@@ -1,6 +1,8 @@
 package PietroRomano;
 
 import com.github.javafaker.Faker;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.time.LocalDate;
 import java.time.ZoneId;
@@ -9,6 +11,8 @@ import java.util.function.Supplier;
 import java.util.stream.Collectors;
 
 public class Application {
+private static Logger logger = LoggerFactory.getLogger(Application.class);
+
 
     public static void main(String[] args) {
 
@@ -109,6 +113,27 @@ public class Application {
        System.out.println("La somma sull'etá ha statistica: " + statistics);
         System.out.println("Minima età: " + statistics.getMin());
         System.out.println("Massima età: " + statistics.getMax());
+
+        //--------------------------------LOGBACK------------------------
+        // tipi di logger da implementare poi con un try/catch
+        //        logger.info("info");
+        //        logger.warn("warn");
+        //        logger.error("error");
+        //        logger.debug("debug");
+        //        logger.trace("trace");
+
+        //esempio di utilizzo
+        //        logger.info("info...");
+        //        try {
+        //            logger.debug(" debug...");
+        //        } catch (Exception e) {
+        //            logger.error("error...");
+        //        }
+
+
+
+
+
 
 
     }
