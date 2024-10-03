@@ -106,7 +106,10 @@ public class Application {
 
         //5. ottenimento di statistiche sull'etá tramite mapToInt
         IntSummaryStatistics statistics = utenti.stream().mapToInt(user -> user.getAge()).summaryStatistics();
-        System.out.println("La somma sull'etá ha statistica: " + statistics);
+       System.out.println("La somma sull'etá ha statistica: " + statistics);
+        System.out.println("Minima età: " + statistics.getMin());
+        System.out.println("Massima età: " + statistics.getMax());
+
 
     }
 
